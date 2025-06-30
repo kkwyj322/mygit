@@ -13,7 +13,7 @@
 int16_t page=1,arrow=0;   //控制菜单变量
 int16_t page_last;//
 
-float I_Kp =0,I_Kd = 0;
+float I_Kp =0,I_Kd = 0,I_KI = 0;
 
 typedef struct{
 	uint16 menu_open;

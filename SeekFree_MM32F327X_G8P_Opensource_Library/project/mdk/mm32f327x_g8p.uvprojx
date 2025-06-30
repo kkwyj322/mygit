@@ -1233,6 +1233,26 @@
               <FileType>5</FileType>
               <FilePath>..\hardware\menu.h</FilePath>
             </File>
+            <File>
+              <FileName>servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\hardware\servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>image.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\image.c</FilePath>
+            </File>
+            <File>
+              <FileName>image.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\hardware\image.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
