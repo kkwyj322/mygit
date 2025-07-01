@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\MM32F327X_G8P.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\MM32F327X_G8P.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6070001: Last Updated: Mon Jun 30 11:52:50 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6230001: Last Updated: Mon Jun 30 18:22:16 2025
 <BR><P>
-<H3>Maximum Stack Usage =       1040 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        912 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; ips200_init &rArr; spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 <P>
@@ -288,13 +288,14 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mm32f3277g.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[86]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
+<P><STRONG><a name="[87]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
 </UL>
 
-<P><STRONG><a name="[8a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
+<P><STRONG><a name="[7a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_protective_handler
 </UL>
 
 <P><STRONG><a name="[b2]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
@@ -311,7 +312,7 @@ Global Symbols
 <P><STRONG><a name="[52]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_clear
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_clear
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output
 </UL>
 
@@ -375,15 +376,15 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
 </UL>
 
-<P><STRONG><a name="[60]"></a>__aeabi_d2uiz</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, dfixui.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_d2uiz
+<P><STRONG><a name="[60]"></a>__aeabi_d2iz</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, dfixi.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_d2iz
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
 </UL>
 
-<P><STRONG><a name="[82]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<P><STRONG><a name="[83]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
 </UL>
 
@@ -403,18 +404,18 @@ Global Symbols
 
 <P><STRONG><a name="[56]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
 <P><STRONG><a name="[b8]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[61]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
 <P><STRONG><a name="[b9]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
@@ -438,8 +439,8 @@ Global Symbols
 <P><STRONG><a name="[59]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
@@ -450,8 +451,8 @@ Global Symbols
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 </UL>
 
 <P><STRONG><a name="[63]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
@@ -465,7 +466,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[51]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<P><STRONG><a name="[51]"></a>__scatterload</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
@@ -473,7 +474,7 @@ Global Symbols
 
 <P><STRONG><a name="[bd]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[15]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, isr.o(.text.DMA1_Channel1_IRQHandler))
+<P><STRONG><a name="[15]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, isr.o(.text.DMA1_Channel1_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
 <P><STRONG><a name="[16]"></a>DMA1_Channel2_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, isr.o(.text.DMA1_Channel2_IRQHandler))
@@ -482,7 +483,7 @@ Global Symbols
 <P><STRONG><a name="[17]"></a>DMA1_Channel3_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, isr.o(.text.DMA1_Channel3_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[18]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, isr.o(.text.DMA1_Channel4_IRQHandler))
+<P><STRONG><a name="[18]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, isr.o(.text.DMA1_Channel4_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel4_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
@@ -496,7 +497,7 @@ Global Symbols
 <P><STRONG><a name="[1b]"></a>DMA1_Channel7_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, isr.o(.text.DMA1_Channel7_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[3d]"></a>DMA2_Channel1_IRQHandler</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, isr.o(.text.DMA2_Channel1_IRQHandler))
+<P><STRONG><a name="[3d]"></a>DMA2_Channel1_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, isr.o(.text.DMA2_Channel1_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
 <P><STRONG><a name="[3e]"></a>DMA2_Channel2_IRQHandler</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, isr.o(.text.DMA2_Channel2_IRQHandler))
@@ -514,7 +515,7 @@ Global Symbols
 <P><STRONG><a name="[10]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.EXTI0_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[2e]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 236 bytes, Stack size 8 bytes, isr.o(.text.EXTI15_10_IRQHandler))
+<P><STRONG><a name="[2e]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 228 bytes, Stack size 8 bytes, isr.o(.text.EXTI15_10_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = EXTI15_10_IRQHandler &rArr; dm1xa_sound_callback &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
@@ -531,100 +532,100 @@ Global Symbols
 <P><STRONG><a name="[13]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.EXTI3_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[14]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, isr.o(.text.EXTI4_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 968<LI>Call Chain = EXTI4_IRQHandler &rArr; dl1a_int_handler &rArr; dl1a_get_distance &rArr; soft_iic_read_8bit_registers &rArr; soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[14]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, isr.o(.text.EXTI4_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 824<LI>Call Chain = EXTI4_IRQHandler &rArr; dl1a_int_handler &rArr; dl1a_get_distance &rArr; soft_iic_read_8bit_registers &rArr; soft_iic_read_data &rArr; soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_int_handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[1f]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 200 bytes, Stack size 8 bytes, isr.o(.text.EXTI9_5_IRQHandler))
+<P><STRONG><a name="[1f]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 196 bytes, Stack size 8 bytes, isr.o(.text.EXTI9_5_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI9_5_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
 <P><STRONG><a name="[49]"></a>SystemInit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, system_mm32f3277g.o(.text.SystemInit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = SystemInit &rArr; clock_init &rArr; clock_set_freq &rArr; func_get_greatest_common_divisor
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SystemInit &rArr; clock_init &rArr; clock_set_freq &rArr; func_get_greatest_common_divisor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(.text)
 </UL>
-<P><STRONG><a name="[21]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, isr.o(.text.TIM1_UP_IRQHandler))
+<P><STRONG><a name="[21]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM1_UP_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[24]"></a>TIM2_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM2_IRQHandler))
+<P><STRONG><a name="[24]"></a>TIM2_IRQHandler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, isr.o(.text.TIM2_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[25]"></a>TIM3_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, isr.o(.text.TIM3_IRQHandler))
+<P><STRONG><a name="[25]"></a>TIM3_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM3_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[26]"></a>TIM4_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, isr.o(.text.TIM4_IRQHandler))
+<P><STRONG><a name="[26]"></a>TIM4_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM4_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[37]"></a>TIM5_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, isr.o(.text.TIM5_IRQHandler))
+<P><STRONG><a name="[37]"></a>TIM5_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM5_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[3b]"></a>TIM6_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, isr.o(.text.TIM6_IRQHandler))
+<P><STRONG><a name="[3b]"></a>TIM6_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM6_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[3c]"></a>TIM7_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, isr.o(.text.TIM7_IRQHandler))
+<P><STRONG><a name="[3c]"></a>TIM7_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, isr.o(.text.TIM7_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[32]"></a>TIM8_UP_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, isr.o(.text.TIM8_UP_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TIM8_UP_IRQHandler &rArr; tsl1401_collect_pit_handler &rArr; adc_convert
+<P><STRONG><a name="[32]"></a>TIM8_UP_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, isr.o(.text.TIM8_UP_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = TIM8_UP_IRQHandler &rArr; tsl1401_collect_pit_handler &rArr; adc_convert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsl1401_collect_pit_handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[2b]"></a>UART1_IRQHandler</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, isr.o(.text.UART1_IRQHandler))
+<P><STRONG><a name="[2b]"></a>UART1_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, isr.o(.text.UART1_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[2c]"></a>UART2_IRQHandler</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, isr.o(.text.UART2_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 968<LI>Call Chain = UART2_IRQHandler &rArr; gps_uart_callback &rArr; fifo_read_buffer &rArr; fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[2c]"></a>UART2_IRQHandler</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, isr.o(.text.UART2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 800<LI>Call Chain = UART2_IRQHandler &rArr; gps_uart_callback &rArr; fifo_read_buffer &rArr; fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gps_uart_callback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[2d]"></a>UART3_IRQHandler</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, isr.o(.text.UART3_IRQHandler))
+<P><STRONG><a name="[2d]"></a>UART3_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, isr.o(.text.UART3_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[39]"></a>UART4_IRQHandler</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, isr.o(.text.UART4_IRQHandler))
+<P><STRONG><a name="[39]"></a>UART4_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, isr.o(.text.UART4_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[3a]"></a>UART5_IRQHandler</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, isr.o(.text.UART5_IRQHandler))
+<P><STRONG><a name="[3a]"></a>UART5_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, isr.o(.text.UART5_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[45]"></a>UART6_IRQHandler</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, isr.o(.text.UART6_IRQHandler))
+<P><STRONG><a name="[45]"></a>UART6_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, isr.o(.text.UART6_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART6_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[46]"></a>UART7_IRQHandler</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, isr.o(.text.UART7_IRQHandler))
+<P><STRONG><a name="[46]"></a>UART7_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, isr.o(.text.UART7_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[47]"></a>UART8_IRQHandler</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, isr.o(.text.UART8_IRQHandler))
+<P><STRONG><a name="[47]"></a>UART8_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, isr.o(.text.UART8_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART8_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mm32f3277g.o(RESET)
 </UL>
-<P><STRONG><a name="[a3]"></a>adc_convert</STRONG> (Thumb, 158 bytes, Stack size 8 bytes, zf_driver_adc.o(.text.adc_convert))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = adc_convert
+<P><STRONG><a name="[a3]"></a>adc_convert</STRONG> (Thumb, 150 bytes, Stack size 4 bytes, zf_driver_adc.o(.text.adc_convert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = adc_convert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsl1401_collect_pit_handler
 </UL>
 
-<P><STRONG><a name="[a2]"></a>afio_init</STRONG> (Thumb, 410 bytes, Stack size 44 bytes, zf_driver_gpio.o(.text.afio_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = afio_init
+<P><STRONG><a name="[a2]"></a>afio_init</STRONG> (Thumb, 384 bytes, Stack size 12 bytes, zf_driver_gpio.o(.text.afio_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = afio_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 </UL>
 
-<P><STRONG><a name="[68]"></a>clock_init</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, zf_common_clock.o(.text.clock_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = clock_init &rArr; clock_set_freq &rArr; func_get_greatest_common_divisor
+<P><STRONG><a name="[68]"></a>clock_init</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, zf_common_clock.o(.text.clock_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = clock_init &rArr; clock_set_freq &rArr; func_get_greatest_common_divisor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;interrupt_init
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_set_freq
@@ -634,101 +635,101 @@ Global Symbols
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[6f]"></a>debug_assert_handler</STRONG> (Thumb, 132 bytes, Stack size 40 bytes, zf_common_debug.o(.text.debug_assert_handler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 784<LI>Call Chain = debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[6f]"></a>debug_assert_handler</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, zf_common_debug.o(.text.debug_assert_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 688<LI>Call Chain = debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;interrupt_global_disable
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_protective_handler
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_delay
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_protective_handler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_used
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_clear
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_string
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_delay_ms
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_query_byte
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_wait_ack
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_stop
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_start
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_data
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_ack
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_data
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_query_byte
-<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_string
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_wait_ack
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_stop
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_data
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_delay_ms
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_used
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_clear
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_string
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_char
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_string
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_region
 </UL>
 
 <P><STRONG><a name="[74]"></a>debug_init</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, zf_common_debug.o(.text.debug_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 872<LI>Call Chain = debug_init &rArr; uart_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<BR><BR>[Stack]<UL><LI>Max Depth = 744<LI>Call Chain = debug_init &rArr; uart_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_struct_init
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_init
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_struct_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[76]"></a>debug_output_init</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, zf_common_debug.o(.text.debug_output_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = debug_output_init
+<P><STRONG><a name="[76]"></a>debug_output_init</STRONG> (Thumb, 76 bytes, Stack size 4 bytes, zf_common_debug.o(.text.debug_output_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = debug_output_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_init
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_debug_init
 </UL>
 
-<P><STRONG><a name="[75]"></a>debug_output_struct_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, zf_common_debug.o(.text.debug_output_struct_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = debug_output_struct_init
+<P><STRONG><a name="[75]"></a>debug_output_struct_init</STRONG> (Thumb, 48 bytes, Stack size 4 bytes, zf_common_debug.o(.text.debug_output_struct_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = debug_output_struct_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_init
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_debug_init
 </UL>
 
-<P><STRONG><a name="[7c]"></a>dl1a_get_distance</STRONG> (Thumb, 164 bytes, Stack size 24 bytes, zf_device_dl1a.o(.text.dl1a_get_distance))
-<BR><BR>[Stack]<UL><LI>Max Depth = 952<LI>Call Chain = dl1a_get_distance &rArr; soft_iic_read_8bit_registers &rArr; soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[7d]"></a>dl1a_get_distance</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, zf_device_dl1a.o(.text.dl1a_get_distance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 808<LI>Call Chain = dl1a_get_distance &rArr; soft_iic_read_8bit_registers &rArr; soft_iic_read_data &rArr; soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_int_handler
 </UL>
 
 <P><STRONG><a name="[67]"></a>dl1a_int_handler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, zf_device_dl1a.o(.text.dl1a_int_handler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 960<LI>Call Chain = dl1a_int_handler &rArr; dl1a_get_distance &rArr; soft_iic_read_8bit_registers &rArr; soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = dl1a_int_handler &rArr; dl1a_get_distance &rArr; soft_iic_read_8bit_registers &rArr; soft_iic_read_data &rArr; soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_get_distance
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_get_distance
 </UL>
 <BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
 </UL>
 
-<P><STRONG><a name="[65]"></a>dm1xa_light_callback</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, zf_device_dm1xa.o(.text.dm1xa_light_callback))
-<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = dm1xa_light_callback &rArr; timer_clear
+<P><STRONG><a name="[65]"></a>dm1xa_light_callback</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, zf_device_dm1xa.o(.text.dm1xa_light_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dm1xa_light_callback &rArr; timer_clear
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_clear
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
-<P><STRONG><a name="[66]"></a>dm1xa_sound_callback</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, zf_device_dm1xa.o(.text.dm1xa_sound_callback))
+<P><STRONG><a name="[66]"></a>dm1xa_sound_callback</STRONG> (Thumb, 256 bytes, Stack size 16 bytes, zf_device_dm1xa.o(.text.dm1xa_sound_callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = dm1xa_sound_callback &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_clear
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_get
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_get_level
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_get_level
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_get
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_clear
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
-<P><STRONG><a name="[83]"></a>fifo_clear</STRONG> (Thumb, 202 bytes, Stack size 40 bytes, zf_common_fifo.o(.text.fifo_clear))
-<BR><BR>[Stack]<UL><LI>Max Depth = 824<LI>Call Chain = fifo_clear &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[84]"></a>fifo_clear</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, zf_common_fifo.o(.text.fifo_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = fifo_clear &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
@@ -736,53 +737,53 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gps_uart_callback
 </UL>
 
-<P><STRONG><a name="[84]"></a>fifo_read_buffer</STRONG> (Thumb, 572 bytes, Stack size 104 bytes, zf_common_fifo.o(.text.fifo_read_buffer))
-<BR><BR>[Stack]<UL><LI>Max Depth = 904<LI>Call Chain = fifo_read_buffer &rArr; fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[85]"></a>fifo_read_buffer</STRONG> (Thumb, 496 bytes, Stack size 48 bytes, zf_common_fifo.o(.text.fifo_read_buffer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = fifo_read_buffer &rArr; fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_used
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_end_offset
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_used
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_end_offset
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gps_uart_callback
 </UL>
 
-<P><STRONG><a name="[85]"></a>fifo_used</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, zf_common_fifo.o(.text.fifo_used))
-<BR><BR>[Stack]<UL><LI>Max Depth = 800<LI>Call Chain = fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[86]"></a>fifo_used</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, zf_common_fifo.o(.text.fifo_used))
+<BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gps_uart_callback
 </UL>
 
-<P><STRONG><a name="[88]"></a>fifo_write_buffer</STRONG> (Thumb, 602 bytes, Stack size 80 bytes, zf_common_fifo.o(.text.fifo_write_buffer))
-<BR><BR>[Stack]<UL><LI>Max Depth = 864<LI>Call Chain = fifo_write_buffer &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[89]"></a>fifo_write_buffer</STRONG> (Thumb, 506 bytes, Stack size 40 bytes, zf_common_fifo.o(.text.fifo_write_buffer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 728<LI>Call Chain = fifo_write_buffer &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_head_offset
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_head_offset
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gps_uart_callback
 </UL>
 
-<P><STRONG><a name="[6e]"></a>func_get_greatest_common_divisor</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, zf_common_function.o(.text.func_get_greatest_common_divisor))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = func_get_greatest_common_divisor
+<P><STRONG><a name="[6e]"></a>func_get_greatest_common_divisor</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, zf_common_function.o(.text.func_get_greatest_common_divisor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = func_get_greatest_common_divisor
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_set_freq
 </UL>
 
-<P><STRONG><a name="[80]"></a>gpio_get_level</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, zf_driver_gpio.o(.text.gpio_get_level))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = gpio_get_level
+<P><STRONG><a name="[81]"></a>gpio_get_level</STRONG> (Thumb, 46 bytes, Stack size 4 bytes, zf_driver_gpio.o(.text.gpio_get_level))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = gpio_get_level
 </UL>
-<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_data
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_wait_ack
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_data
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
 </UL>
 
-<P><STRONG><a name="[7a]"></a>gpio_init</STRONG> (Thumb, 516 bytes, Stack size 48 bytes, zf_driver_gpio.o(.text.gpio_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = gpio_init &rArr; gpio_set_level
+<P><STRONG><a name="[7b]"></a>gpio_init</STRONG> (Thumb, 488 bytes, Stack size 24 bytes, zf_driver_gpio.o(.text.gpio_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = gpio_init &rArr; gpio_set_level
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_set_level
 </UL>
@@ -790,39 +791,39 @@ Global Symbols
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 </UL>
 
-<P><STRONG><a name="[8b]"></a>gpio_set_level</STRONG> (Thumb, 108 bytes, Stack size 12 bytes, zf_driver_gpio.o(.text.gpio_set_level))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = gpio_set_level
+<P><STRONG><a name="[8b]"></a>gpio_set_level</STRONG> (Thumb, 98 bytes, Stack size 4 bytes, zf_driver_gpio.o(.text.gpio_set_level))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = gpio_set_level
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 </UL>
 
-<P><STRONG><a name="[6a]"></a>gps_uart_callback</STRONG> (Thumb, 332 bytes, Stack size 56 bytes, zf_device_gps_tau1201.o(.text.gps_uart_callback))
-<BR><BR>[Stack]<UL><LI>Max Depth = 960<LI>Call Chain = gps_uart_callback &rArr; fifo_read_buffer &rArr; fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[6a]"></a>gps_uart_callback</STRONG> (Thumb, 314 bytes, Stack size 40 bytes, zf_device_gps_tau1201.o(.text.gps_uart_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 792<LI>Call Chain = gps_uart_callback &rArr; fifo_read_buffer &rArr; fifo_used &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_used
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_clear
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_query_byte
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_query_byte
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_used
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_clear
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[70]"></a>interrupt_global_disable</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, zf_common_interrupt.o(.text.interrupt_global_disable))
+<P><STRONG><a name="[70]"></a>interrupt_global_disable</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, zf_common_interrupt.o(.text.interrupt_global_disable))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 
 <P><STRONG><a name="[6d]"></a>interrupt_init</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, zf_common_interrupt.o(.text.interrupt_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = interrupt_init &rArr; __NVIC_SetPriorityGrouping
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = interrupt_init &rArr; __NVIC_SetPriorityGrouping
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriorityGrouping
 </UL>
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_init
 </UL>
 
-<P><STRONG><a name="[4d]"></a>ips200_clear</STRONG> (Thumb, 274 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_clear))
-<BR><BR>[Stack]<UL><LI>Max Depth = 856<LI>Call Chain = ips200_clear &rArr; ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[4d]"></a>ips200_clear</STRONG> (Thumb, 270 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 736<LI>Call Chain = ips200_clear &rArr; ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_16bit_data
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_region
@@ -831,163 +832,165 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> zf_device_ips200.o(.text.ips200_debug_init)
 </UL>
-<P><STRONG><a name="[92]"></a>ips200_init</STRONG> (Thumb, 1208 bytes, Stack size 152 bytes, zf_device_ips200.o(.text.ips200_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1024<LI>Call Chain = ips200_init &rArr; spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[92]"></a>ips200_init</STRONG> (Thumb, 1138 bytes, Stack size 152 bytes, zf_device_ips200.o(.text.ips200_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 896<LI>Call Chain = ips200_init &rArr; spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_delay_ms
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_dir
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_color
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_dir
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_clear
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_command
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_8bit_data
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_debug_init
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_8bit_data
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_command
 </UL>
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>ips200_set_color</STRONG> (Thumb, 50 bytes, Stack size 12 bytes, zf_device_ips200.o(.text.ips200_set_color))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ips200_set_color
+<P><STRONG><a name="[95]"></a>ips200_set_color</STRONG> (Thumb, 42 bytes, Stack size 4 bytes, zf_device_ips200.o(.text.ips200_set_color))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ips200_set_color
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 </UL>
 
-<P><STRONG><a name="[94]"></a>ips200_set_dir</STRONG> (Thumb, 106 bytes, Stack size 12 bytes, zf_device_ips200.o(.text.ips200_set_dir))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ips200_set_dir
+<P><STRONG><a name="[94]"></a>ips200_set_dir</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, zf_device_ips200.o(.text.ips200_set_dir))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ips200_set_dir
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 </UL>
 
-<P><STRONG><a name="[99]"></a>ips200_show_char</STRONG> (Thumb, 770 bytes, Stack size 56 bytes, zf_device_ips200.o(.text.ips200_show_char))
-<BR><BR>[Stack]<UL><LI>Max Depth = 896<LI>Call Chain = ips200_show_char &rArr; ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[99]"></a>ips200_show_char</STRONG> (Thumb, 734 bytes, Stack size 32 bytes, zf_device_ips200.o(.text.ips200_show_char))
+<BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = ips200_show_char &rArr; ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_16bit_data
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_region
 </UL>
-<BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_string
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_string
 </UL>
 
-<P><STRONG><a name="[4c]"></a>ips200_show_string</STRONG> (Thumb, 244 bytes, Stack size 48 bytes, zf_device_ips200.o(.text.ips200_show_string))
-<BR><BR>[Stack]<UL><LI>Max Depth = 944<LI>Call Chain = ips200_show_string &rArr; ips200_show_char &rArr; ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[4c]"></a>ips200_show_string</STRONG> (Thumb, 220 bytes, Stack size 32 bytes, zf_device_ips200.o(.text.ips200_show_string))
+<BR><BR>[Stack]<UL><LI>Max Depth = 784<LI>Call Chain = ips200_show_string &rArr; ips200_show_char &rArr; ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_char
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> zf_device_ips200.o(.text.ips200_debug_init)
 </UL>
-<P><STRONG><a name="[48]"></a>main</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, main.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1040<LI>Call Chain = main &rArr; ips200_init &rArr; spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[48]"></a>main</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 912<LI>Call Chain = main &rArr; ips200_init &rArr; spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_show_char
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_init
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[7d]"></a>soft_iic_read_8bit_registers</STRONG> (Thumb, 196 bytes, Stack size 64 bytes, zf_driver_soft_iic.o(.text.soft_iic_read_8bit_registers))
-<BR><BR>[Stack]<UL><LI>Max Depth = 928<LI>Call Chain = soft_iic_read_8bit_registers &rArr; soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[7e]"></a>soft_iic_read_8bit_registers</STRONG> (Thumb, 152 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_read_8bit_registers))
+<BR><BR>[Stack]<UL><LI>Max Depth = 784<LI>Call Chain = soft_iic_read_8bit_registers &rArr; soft_iic_read_data &rArr; soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_data
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_stop
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_start
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_data
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_data
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_start
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_get_distance
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_get_distance
 </UL>
 
-<P><STRONG><a name="[7e]"></a>soft_iic_write_8bit_register</STRONG> (Thumb, 120 bytes, Stack size 40 bytes, zf_driver_soft_iic.o(.text.soft_iic_write_8bit_register))
-<BR><BR>[Stack]<UL><LI>Max Depth = 904<LI>Call Chain = soft_iic_write_8bit_register &rArr; soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[7f]"></a>soft_iic_write_8bit_register</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, zf_driver_soft_iic.o(.text.soft_iic_write_8bit_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 768<LI>Call Chain = soft_iic_write_8bit_register &rArr; soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_stop
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_start
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_stop
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_data
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_start
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_get_distance
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dl1a_get_distance
 </UL>
 
-<P><STRONG><a name="[93]"></a>spi_init</STRONG> (Thumb, 914 bytes, Stack size 88 bytes, zf_driver_spi.o(.text.spi_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 872<LI>Call Chain = spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[93]"></a>spi_init</STRONG> (Thumb, 870 bytes, Stack size 56 bytes, zf_driver_spi.o(.text.spi_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 744<LI>Call Chain = spi_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afio_init
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afio_init
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 </UL>
 
-<P><STRONG><a name="[9a]"></a>spi_write_16bit</STRONG> (Thumb, 202 bytes, Stack size 12 bytes, zf_driver_spi.o(.text.spi_write_16bit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = spi_write_16bit
+<P><STRONG><a name="[9a]"></a>spi_write_16bit</STRONG> (Thumb, 184 bytes, Stack size 4 bytes, zf_driver_spi.o(.text.spi_write_16bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = spi_write_16bit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_16bit_data
 </UL>
 
-<P><STRONG><a name="[9b]"></a>spi_write_8bit</STRONG> (Thumb, 148 bytes, Stack size 12 bytes, zf_driver_spi.o(.text.spi_write_8bit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = spi_write_8bit
+<P><STRONG><a name="[9b]"></a>spi_write_8bit</STRONG> (Thumb, 134 bytes, Stack size 4 bytes, zf_driver_spi.o(.text.spi_write_8bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = spi_write_8bit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_command
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_8bit_data
+<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_8bit_data
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_command
 </UL>
 
-<P><STRONG><a name="[96]"></a>system_delay_ms</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, zf_driver_delay.o(.text.system_delay_ms))
-<BR><BR>[Stack]<UL><LI>Max Depth = 808<LI>Call Chain = system_delay_ms &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[96]"></a>system_delay_ms</STRONG> (Thumb, 154 bytes, Stack size 16 bytes, zf_driver_delay.o(.text.system_delay_ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = system_delay_ms &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 </UL>
 
-<P><STRONG><a name="[7f]"></a>timer_clear</STRONG> (Thumb, 182 bytes, Stack size 12 bytes, zf_driver_timer.o(.text.timer_clear))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = timer_clear
+<P><STRONG><a name="[80]"></a>timer_clear</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, zf_driver_timer.o(.text.timer_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_light_callback
 </UL>
 
-<P><STRONG><a name="[81]"></a>timer_get</STRONG> (Thumb, 186 bytes, Stack size 20 bytes, zf_driver_timer.o(.text.timer_get))
-<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = timer_get
+<P><STRONG><a name="[82]"></a>timer_get</STRONG> (Thumb, 182 bytes, Stack size 16 bytes, zf_driver_timer.o(.text.timer_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = timer_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dm1xa_sound_callback
 </UL>
 
-<P><STRONG><a name="[69]"></a>tsl1401_collect_pit_handler</STRONG> (Thumb, 230 bytes, Stack size 24 bytes, zf_device_tsl1401.o(.text.tsl1401_collect_pit_handler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = tsl1401_collect_pit_handler &rArr; adc_convert
+<P><STRONG><a name="[69]"></a>tsl1401_collect_pit_handler</STRONG> (Thumb, 224 bytes, Stack size 24 bytes, zf_device_tsl1401.o(.text.tsl1401_collect_pit_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = tsl1401_collect_pit_handler &rArr; adc_convert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_convert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM8_UP_IRQHandler
 </UL>
 
-<P><STRONG><a name="[77]"></a>uart_init</STRONG> (Thumb, 684 bytes, Stack size 56 bytes, zf_driver_uart.o(.text.uart_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 840<LI>Call Chain = uart_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[77]"></a>uart_init</STRONG> (Thumb, 652 bytes, Stack size 24 bytes, zf_driver_uart.o(.text.uart_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = uart_init &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afio_init
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;afio_init
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_init
 </UL>
 
-<P><STRONG><a name="[8c]"></a>uart_query_byte</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, zf_driver_uart.o(.text.uart_query_byte))
-<BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = uart_query_byte &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[8c]"></a>uart_query_byte</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, zf_driver_uart.o(.text.uart_query_byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = uart_query_byte &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gps_uart_callback
 </UL>
 
-<P><STRONG><a name="[a4]"></a>uart_write_byte</STRONG> (Thumb, 74 bytes, Stack size 12 bytes, zf_driver_uart.o(.text.uart_write_byte))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = uart_write_byte
+<P><STRONG><a name="[a4]"></a>uart_write_byte</STRONG> (Thumb, 64 bytes, Stack size 4 bytes, zf_driver_uart.o(.text.uart_write_byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = uart_write_byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_string
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_string
 </UL>
 
-<P><STRONG><a name="[7b]"></a>uart_write_string</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, zf_driver_uart.o(.text.uart_write_string))
-<BR><BR>[Stack]<UL><LI>Max Depth = 808<LI>Call Chain = uart_write_string &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[7c]"></a>uart_write_string</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, zf_driver_uart.o(.text.uart_write_string))
+<BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = uart_write_string &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_byte
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_uart_str_output
 </UL>
@@ -1018,26 +1021,31 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[6b]"></a>clock_reset</STRONG> (Thumb, 146 bytes, Stack size 0 bytes, zf_common_clock.o(.text.clock_reset))
-<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_init
+<P><STRONG><a name="[6b]"></a>clock_reset</STRONG> (Thumb, 152 bytes, Stack size 4 bytes, zf_common_clock.o(.text.clock_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = clock_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_init
 </UL>
 
-<P><STRONG><a name="[6c]"></a>clock_set_freq</STRONG> (Thumb, 646 bytes, Stack size 48 bytes, zf_common_clock.o(.text.clock_set_freq))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = clock_set_freq &rArr; func_get_greatest_common_divisor
+<P><STRONG><a name="[6c]"></a>clock_set_freq</STRONG> (Thumb, 608 bytes, Stack size 32 bytes, zf_common_clock.o(.text.clock_set_freq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = clock_set_freq &rArr; func_get_greatest_common_divisor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;func_get_greatest_common_divisor
 </UL>
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clock_init
 </UL>
 
-<P><STRONG><a name="[73]"></a>debug_delay</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, zf_common_debug.o(.text.debug_delay))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = debug_delay
+<P><STRONG><a name="[71]"></a>debug_protective_handler</STRONG> (Thumb, 242 bytes, Stack size 192 bytes, zf_common_debug.o(.text.debug_protective_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = debug_protective_handler &rArr; gpio_init &rArr; gpio_set_level
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 
-<P><STRONG><a name="[72]"></a>debug_output</STRONG> (Thumb, 1044 bytes, Stack size 720 bytes, zf_common_debug.o(.text.debug_output))
-<BR><BR>[Stack]<UL><LI>Max Depth = 744<LI>Call Chain = debug_output &rArr; sprintf
+<P><STRONG><a name="[72]"></a>debug_output</STRONG> (Thumb, 942 bytes, Stack size 640 bytes, zf_common_debug.o(.text.debug_output))
+<BR><BR>[Stack]<UL><LI>Max Depth = 664<LI>Call Chain = debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
@@ -1046,105 +1054,94 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 
-<P><STRONG><a name="[71]"></a>debug_protective_handler</STRONG> (Thumb, 248 bytes, Stack size 24 bytes, zf_common_debug.o(.text.debug_protective_handler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = debug_protective_handler &rArr; gpio_init &rArr; gpio_set_level
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
+<P><STRONG><a name="[73]"></a>debug_delay</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, zf_common_debug.o(.text.debug_delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = debug_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 
-<P><STRONG><a name="[4b]"></a>debug_uart_str_output</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, zf_common_debug.o(.text.debug_uart_str_output))
-<BR><BR>[Stack]<UL><LI>Max Depth = 832<LI>Call Chain = debug_uart_str_output &rArr; uart_write_string &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[4b]"></a>debug_uart_str_output</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, zf_common_debug.o(.text.debug_uart_str_output))
+<BR><BR>[Stack]<UL><LI>Max Depth = 720<LI>Call Chain = debug_uart_str_output &rArr; uart_write_string &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_string
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write_string
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> zf_common_debug.o(.text.debug_init)
 </UL>
-<P><STRONG><a name="[87]"></a>fifo_end_offset</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, zf_common_fifo.o(.text.fifo_end_offset))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fifo_end_offset
+<P><STRONG><a name="[8a]"></a>fifo_head_offset</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, zf_common_fifo.o(.text.fifo_head_offset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = fifo_head_offset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
-</UL>
-
-<P><STRONG><a name="[89]"></a>fifo_head_offset</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, zf_common_fifo.o(.text.fifo_head_offset))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fifo_head_offset
-</UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_write_buffer
 </UL>
 
-<P><STRONG><a name="[8e]"></a>__NVIC_SetPriorityGrouping</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, zf_common_interrupt.o(.text.__NVIC_SetPriorityGrouping))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __NVIC_SetPriorityGrouping
+<P><STRONG><a name="[88]"></a>fifo_end_offset</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, zf_common_fifo.o(.text.fifo_end_offset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = fifo_end_offset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_read_buffer
+</UL>
+
+<P><STRONG><a name="[8e]"></a>__NVIC_SetPriorityGrouping</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, zf_common_interrupt.o(.text.__NVIC_SetPriorityGrouping))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __NVIC_SetPriorityGrouping
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;interrupt_init
 </UL>
 
-<P><STRONG><a name="[9e]"></a>soft_iic_read_data</STRONG> (Thumb, 388 bytes, Stack size 48 bytes, zf_driver_soft_iic.o(.text.soft_iic_read_data))
-<BR><BR>[Stack]<UL><LI>Max Depth = 864<LI>Call Chain = soft_iic_read_data &rArr; soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[9c]"></a>soft_iic_start</STRONG> (Thumb, 218 bytes, Stack size 24 bytes, zf_driver_soft_iic.o(.text.soft_iic_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = soft_iic_start &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_get_level
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_ack
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
 </UL>
 
-<P><STRONG><a name="[a0]"></a>soft_iic_send_ack</STRONG> (Thumb, 310 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_send_ack))
-<BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[9d]"></a>soft_iic_send_data</STRONG> (Thumb, 296 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_send_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_wait_ack
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
+</UL>
+
+<P><STRONG><a name="[9f]"></a>soft_iic_stop</STRONG> (Thumb, 218 bytes, Stack size 24 bytes, zf_driver_soft_iic.o(.text.soft_iic_stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = soft_iic_stop &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
+</UL>
+
+<P><STRONG><a name="[a1]"></a>soft_iic_wait_ack</STRONG> (Thumb, 248 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_wait_ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 720<LI>Call Chain = soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_get_level
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_data
+</UL>
+
+<P><STRONG><a name="[9e]"></a>soft_iic_read_data</STRONG> (Thumb, 356 bytes, Stack size 40 bytes, zf_driver_soft_iic.o(.text.soft_iic_read_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = soft_iic_read_data &rArr; soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_ack
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_get_level
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
+</UL>
+
+<P><STRONG><a name="[a0]"></a>soft_iic_send_ack</STRONG> (Thumb, 282 bytes, Stack size 24 bytes, zf_driver_soft_iic.o(.text.soft_iic_send_ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = soft_iic_send_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_data
 </UL>
 
-<P><STRONG><a name="[9d]"></a>soft_iic_send_data</STRONG> (Thumb, 336 bytes, Stack size 48 bytes, zf_driver_soft_iic.o(.text.soft_iic_send_data))
-<BR><BR>[Stack]<UL><LI>Max Depth = 864<LI>Call Chain = soft_iic_send_data &rArr; soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_wait_ack
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
-</UL>
-
-<P><STRONG><a name="[9c]"></a>soft_iic_start</STRONG> (Thumb, 246 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_start))
-<BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = soft_iic_start &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
-</UL>
-
-<P><STRONG><a name="[9f]"></a>soft_iic_stop</STRONG> (Thumb, 246 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_stop))
-<BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = soft_iic_stop &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_write_8bit_register
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_read_8bit_registers
-</UL>
-
-<P><STRONG><a name="[a1]"></a>soft_iic_wait_ack</STRONG> (Thumb, 280 bytes, Stack size 32 bytes, zf_driver_soft_iic.o(.text.soft_iic_wait_ack))
-<BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = soft_iic_wait_ack &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_get_level
-</UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;soft_iic_send_data
-</UL>
-
-<P><STRONG><a name="[91]"></a>ips200_debug_init</STRONG> (Thumb, 142 bytes, Stack size 32 bytes, zf_device_ips200.o(.text.ips200_debug_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ips200_debug_init &rArr; debug_output_struct_init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_struct_init
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_init
-</UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
-</UL>
-
-<P><STRONG><a name="[8f]"></a>ips200_set_region</STRONG> (Thumb, 238 bytes, Stack size 56 bytes, zf_device_ips200.o(.text.ips200_set_region))
-<BR><BR>[Stack]<UL><LI>Max Depth = 840<LI>Call Chain = ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
+<P><STRONG><a name="[8f]"></a>ips200_set_region</STRONG> (Thumb, 196 bytes, Stack size 32 bytes, zf_device_ips200.o(.text.ips200_set_region))
+<BR><BR>[Stack]<UL><LI>Max Depth = 720<LI>Call Chain = ips200_set_region &rArr; debug_assert_handler &rArr; debug_output &rArr; sprintf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_assert_handler
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_write_command
@@ -1154,8 +1151,8 @@ Local Symbols
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_clear
 </UL>
 
-<P><STRONG><a name="[90]"></a>ips200_write_16bit_data</STRONG> (Thumb, 206 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_write_16bit_data))
-<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = ips200_write_16bit_data &rArr; spi_write_16bit
+<P><STRONG><a name="[90]"></a>ips200_write_16bit_data</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_write_16bit_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ips200_write_16bit_data &rArr; spi_write_16bit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_16bit
 </UL>
@@ -1164,21 +1161,30 @@ Local Symbols
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_region
 </UL>
 
-<P><STRONG><a name="[98]"></a>ips200_write_8bit_data</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_write_8bit_data))
-<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = ips200_write_8bit_data &rArr; spi_write_8bit
+<P><STRONG><a name="[97]"></a>ips200_write_command</STRONG> (Thumb, 234 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_write_command))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ips200_write_command &rArr; spi_write_8bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_8bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_region
+</UL>
+
+<P><STRONG><a name="[98]"></a>ips200_write_8bit_data</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, zf_device_ips200.o(.text.ips200_write_8bit_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ips200_write_8bit_data &rArr; spi_write_8bit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_8bit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
 </UL>
 
-<P><STRONG><a name="[97]"></a>ips200_write_command</STRONG> (Thumb, 224 bytes, Stack size 24 bytes, zf_device_ips200.o(.text.ips200_write_command))
-<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ips200_write_command &rArr; spi_write_8bit
+<P><STRONG><a name="[91]"></a>ips200_debug_init</STRONG> (Thumb, 138 bytes, Stack size 32 bytes, zf_device_ips200.o(.text.ips200_debug_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ips200_debug_init &rArr; debug_output_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_8bit
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_init
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_output_struct_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_init
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ips200_set_region
 </UL>
 
 <P><STRONG><a name="[4f]"></a>type_default_callback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, zf_device_type.o(.text.type_default_callback))
@@ -1188,22 +1194,22 @@ Local Symbols
 <LI> zf_device_type.o(.data.wireless_module_uart_handler)
 </UL>
 <P><STRONG><a name="[a7]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<BR><BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 <LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[a6]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<BR><BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
 </UL>

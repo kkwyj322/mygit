@@ -48,15 +48,15 @@
 int main(void)
 {
     clock_init(SYSTEM_CLOCK_120M);                                              // 初始化芯片时钟 工作频率为 120MHz
-    debug_init();                                                               // 初始化默认 Debug UART
-
+    debug_init();      	// 初始化默认 Debug UART
+    ips200_init(IPS200_TYPE_PARALLEL8);	
     // 此处编写用户代码 例如外设初始化代码等
     
     // 此处编写用户代码 例如外设初始化代码等   ，         tttttttt
 
     while(1)
     {
-		ips200_init(IPS200_TYPE_PARALLEL8);								
+       ips200_show_char(0, 0, 'x');  			
         // 此处编写需要循环执行的代码
 //        menu_main(); 
         // 此处编写需要循环执行的代码
